@@ -1,4 +1,4 @@
-version: '3.8'
+
 
 services:
   app:
@@ -8,9 +8,9 @@ services:
       - '3000:3000'
     environment:
       - NODE_ENV=development
-      - DB_URI=postgres://ghalyabr:abrar89@db:5432/kanbanDB
-      - DB_USER=ghalyabr
-      - DB_PASSWORD=abrar89
+      - DB_URI=postgres://hazelmpr:hazelmpr@db:5432/kanbanDB
+      - DB_USER=hazelmpr
+      - DB_PASSWORD=hazelmpr
       - DB_HOST=db
       - DB_PORT=5432
       - DB_NAME=kanbanDB
@@ -27,8 +27,8 @@ services:
     container_name: kanbanboard-db
     image: postgres:17
     environment:
-      - POSTGRES_USER=ghalyabr
-      - POSTGRES_PASSWORD=abrar89
+      - POSTGRES_USER=hazelmpr
+      - POSTGRES_PASSWORD=hazelmpr
       - POSTGRES_DB=kanbanDB
     volumes:
       - db_data:/var/lib/postgresql/data
